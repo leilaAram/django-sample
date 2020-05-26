@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block head_title %} Home Page {% endblock head_title %}
+
+{% block content %}
+    <h1>this is my first Page</h1>
+    {{ user }}
+
+    {{ user.is_authenticated}}
+
+    <p>{{ request.user }}</p>
+{% endblock content %}
